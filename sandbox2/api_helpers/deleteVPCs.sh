@@ -1,4 +1,4 @@
-#/usr/bin/env bash
+#!/bin/bash
 
 export REGIONS=$(aws ec2 describe-regions | jq -r ".Regions[].RegionName")
 
