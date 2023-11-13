@@ -29,7 +29,6 @@ for region in $REGIONS ; do
             echo "Killing subnet $region $id $sub"
             aws --region=$region ec2 delete-subnet --subnet-id=$sub
         done
-
         echo "Killing vpc $region $id"
         aws --region=$region ec2 delete-vpc --vpc-id=$id
     done
