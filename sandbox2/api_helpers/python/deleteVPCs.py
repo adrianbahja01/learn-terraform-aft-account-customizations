@@ -166,7 +166,7 @@ def del_vpc_all(ec2, vpc):
   del_sgp(ec2, vpc)
   del_vpc(ec2, vpc)
 
-def main():
+def start_remove():
   client = boto3.client('ec2')
   regions = get_regions(client)
   
@@ -192,4 +192,4 @@ def main():
   print('Deleted all default VPCs')
 
 if __name__ == "__main__":
-  main()
+  start_remove()
