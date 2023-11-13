@@ -1,5 +1,3 @@
-#!/bin/bash
-
 echo "Executing Post-API Helpers"
 
 export REGIONS=$(aws ec2 describe-regions | jq -r ".Regions[].RegionName")
